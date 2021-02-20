@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+    vscode:
+        build: ./.devcontainer
+        user: vscode
+        volumes:
+            - .:/workspace
+    jupyter:
+        image: jupyter/tensorflow-notebook
+        ports:
+            - "9800:8888"
+        volumes:
+            - .:/home/jovyan

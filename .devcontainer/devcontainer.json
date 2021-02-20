@@ -1,0 +1,25 @@
+{
+	"name": "VS Code Sample",
+	"dockerComposeFile": [
+		"../docker-compose.yaml",
+		"docker-compose.yml"
+	],
+	"service": "vscode",
+	"workspaceFolder": "/workspace",
+	"settings": {
+		"jupyter.alwaysTrustNotebooks": true,
+		"jupyter.jupyterServerType": "remote",
+		"jupyter.widgetScriptSources": ["unpkg.com", "jsdelivr.com"],
+		"jupyter.themeMatplotlibPlots": true,
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.dataScience.jupyterServerUri": "http://jupyter:8888?token=null",
+		"python.datascience.enableLoadingWidgetScriptsFromThirdPartySource": true
+	},
+  	"extensions": [
+		"ms-python.python",
+		"ms-toolsai.jupyter",
+		"ms-azuretools.vscode-docker"
+	],
+	"forwardPorts": [],
+	"remoteUser": "vscode"
+}
